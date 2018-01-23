@@ -310,7 +310,7 @@ class TestYoutubeFS_SpecialChars1(TestYoutubeFS):
         # Return an instance of your FS object here
         url = u'https://www.youtube.com/watch?v=Y6qc88nhR28'
         self.url = url
-        return YoutubeFS(url, playlist=False, seekable=False)
+        return YoutubeFS(url, playlist=False)
 
 class TestYoutubeFS_SpecialChars2(TestYoutubeFS):
 
@@ -318,4 +318,4 @@ class TestYoutubeFS_SpecialChars2(TestYoutubeFS):
         # Return an instance of your FS object here
         url = u'https://www.youtube.com/watch?v=AOCBQ-Ut0QQ'
         self.url = url
-        return YoutubeFS(url, playlist=False, seekable=False)
+        return YoutubeFS(url, playlist=False)
