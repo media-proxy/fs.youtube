@@ -8,9 +8,10 @@ import unittest
 import six
 from fs import ResourceType
 from fs import errors
+from six import text_type
+
 # from fs.opener import open_fs
 from fs.youtube import YoutubeFS
-from six import text_type
 
 
 class TestYoutubeFS(unittest.TestCase):
@@ -317,5 +318,13 @@ class TestYoutubeFS_SpecialChars2(TestYoutubeFS):
     def make_fs(self):
         # Return an instance of your FS object here
         url = u'https://www.youtube.com/watch?v=AOCBQ-Ut0QQ'
+        self.url = url
+        return YoutubeFS(url, playlist=False)
+
+
+class TestYoutubeFS_SpecialChars3(TestYoutubeFS):
+    def make_fs(self):
+        # Return an instance of your FS object here
+        url = u'https://www.youtube.com/watch?v=bzpR14NHq2s'
         self.url = url
         return YoutubeFS(url, playlist=False)
