@@ -170,6 +170,10 @@ class YoutubeFS(FS):
                 "details":
                 {
                     "type": int(ResourceType.directory)
+                },
+                "mediaproxy.media":
+                    {
+                        "type": 'video'
                 }
                 })
             return info
