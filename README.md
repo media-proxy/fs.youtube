@@ -1,6 +1,6 @@
 # fs.youtube
 
-[![PyPI version](https://badge.fury.io/py/fs.youtube.svg)](https://pypi.python.org/pypi/fs.youtube) [![Build Status](https://travis-ci.org/merlink01/fs.youtube.svg?branch=master)](https://travis-ci.org/merlink01/fs.youtube) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/94a05423f81a4e79ac9defcff802a753)](https://www.codacy.com/app/merlink01/fs.youtube?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=merlink01/fs.youtube&amp;utm_campaign=Badge_Grade) [![codecov](https://codecov.io/gh/merlink01/fs.youtube/branch/master/graph/badge.svg)](https://codecov.io/gh/merlink01/fs.youtube)
+[![PyPI version](https://badge.fury.io/py/fs.youtube.svg)](https://pypi.python.org/pypi/fs.youtube) [![Build Status](https://travis-ci.org/media-proxy/fs.youtube.svg?branch=master)](https://travis-ci.org/media-proxy/fs.youtube) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/94a05423f81a4e79ac9defcff802a753)](https://www.codacy.com/app/merlink01/fs.youtube?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=merlink01/fs.youtube&amp;utm_campaign=Badge_Grade) [![codecov](https://codecov.io/gh/merlink01/fs.youtube/branch/master/graph/badge.svg)](https://codecov.io/gh/merlink01/fs.youtube)
 
 
 A PyFilesystem2 implementation for accessing YouTube Videos and Playlists
@@ -57,7 +57,7 @@ Feedback
 --------
 
 Found a bug ? Have an enhancement request ? Head over to the
-[GitHub issue tracker](<https://github.com/merlink01/fs.youtube/issues>) of the
+[GitHub issue tracker](<https://github.com/media-proxy/fs.youtube/issues>) of the
 project if you need to report or ask something. If you are filling in on a bug,
 please include as much information as you can about the issue, and try to
 recreate the same bug in a simple, easily reproductible situation.
