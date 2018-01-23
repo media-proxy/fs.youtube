@@ -302,3 +302,12 @@ class TestYoutubeFS_Unseekable(TestYoutubeFS):
 
         with self.assertRaises(errors.Unsupported):
             self.fs.setinfo('test')
+
+
+class TestYoutubeFS_SpecialChars(TestYoutubeFS):
+
+    def make_fs(self):
+        # Return an instance of your FS object here
+        url = u'https://www.youtube.com/playlist?list=PLJpMp7EPOGSAk60elkLYz0wBLKJMQXzEv'
+        self.url = url
+        return YoutubeFS(url, playlist=False, seekable=False)

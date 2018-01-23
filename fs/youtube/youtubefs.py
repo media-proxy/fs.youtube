@@ -127,7 +127,7 @@ class YoutubeFS(FS):
     def _get_name(self, pafyobj):
         name = '%s.%s' % (pafyobj.title, pafyobj.getbest().extension)
 
-        for char in self.meta.invalid_path_chars:
+        for char in self._meta['invalid_path_chars']:
             name.replace(char, '')
 
         return name
