@@ -310,4 +310,4 @@ class TestYoutubeFS_SpecialChars(TestYoutubeFS):
         # Return an instance of your FS object here
         url = u'https://www.youtube.com/playlist?list=PLJpMp7EPOGSAk60elkLYz0wBLKJMQXzEv'
         self.url = url
-        return YoutubeFS(url, playlist=False, seekable=False)
+        return YoutubeFS(url)
