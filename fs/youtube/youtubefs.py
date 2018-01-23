@@ -101,7 +101,7 @@ class YoutubeFS(FS):
 
     _meta = {
         'case_insensitive': False,
-        'invalid_path_chars': '\0"\[]+|<>=;?*',
+        'invalid_path_chars': '\0"\[]+|<>=;?*":',
         'network': True,
         'read_only': True,
         'thread_safe': True,
@@ -128,7 +128,7 @@ class YoutubeFS(FS):
         name = '%s.%s' % (pafyobj.title, pafyobj.getbest().extension)
 
         for char in self._meta['invalid_path_chars']:
-            name.replace(char, '')
+            name = name.replace(char, '')
 
         return name
 
