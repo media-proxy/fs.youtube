@@ -1,0 +1,28 @@
+sudo: false
+language: python
+cache: pip
+
+python:
+- '2.7'
+- '3.3'
+- '3.4'
+- '3.5'
+- '3.6'
+- pypy
+- pypy-5.3.1
+
+before_install:
+- pip install -U setuptools wheel
+
+install:
+- pip install .[dev,test]
+
+script:
+- green
+
+after_script:
+- codecov
+
+notifications:
+  email:
+  - M3RLINK@gmx.de
