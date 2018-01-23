@@ -7,8 +7,8 @@ from __future__ import unicode_literals
 from .base import Opener
 
 __license__ = "MIT"
-__copyright__ = "Copyright (c) 2017 merlink01"
-__author__ = "merlink01"
+__copyright__ = "Copyright (c) 2017 media-proxy"
+__author__ = "media-proxy"
 __version__ = 'dev'
 
 # Dynamically get the version of the main module
