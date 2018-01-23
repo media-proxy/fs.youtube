@@ -261,9 +261,9 @@ class YoutubeFS(FS):
 
         if self.seekable:
             response = SeekableHTTPFile(url)
-            return RawWrapper(response, mode=mode, *args, **kwargs)
+            return RawWrapper(response, mode=mode)  # , *args, **kwargs) #Buffering from fs.base.open not supported???
         else:
-            return HTTPFile(urlopen(url), mode=mode, *args, **kwargs)
+            return HTTPFile(urlopen(url), mode=mode)  # , *args, **kwargs)
 
     @classmethod
     def makedir(self, *args, **kwargs):
