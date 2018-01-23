@@ -126,8 +126,10 @@ class YoutubeFS(FS):
     @classmethod
     def _get_name(self, pafyobj):
         name = '%s.%s' % (pafyobj.title, pafyobj.getbest().extension)
-        name.replace('/', '')
-        name.replace('\\', '')
+
+        for char in self.meta.invalid_path_chars:
+            name.replace(char, '')
+
         return name
 
     def listdir(self, path):
