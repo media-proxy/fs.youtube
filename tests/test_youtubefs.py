@@ -8,9 +8,10 @@ import unittest
 import six
 from fs import ResourceType
 from fs import errors
+from six import text_type
+
 # from fs.opener import open_fs
 from fs.youtube import YoutubeFS
-from six import text_type
 
 
 class TestYoutubeFS(unittest.TestCase):
