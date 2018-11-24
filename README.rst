@@ -1,7 +1,20 @@
 fs.youtube
 ==========
 
-|PyPI version| |Build Status| |Codacy Badge| |codecov|
+.. image:: https://badge.fury.io/py/fs.youtube.svg
+    :target: https://badge.fury.io/py/fs.youtube
+
+.. image:: https://travis-ci.org/media-proxy/fs.youtube.svg?branch=master
+    :target: https://travis-ci.org/media-proxy/fs.youtube
+    
+.. image:: https://api.codacy.com/project/badge/Grade/c8331c97a4054df88cc79878c615cdb2
+    :target: https://www.codacy.com/app/media-proxy/fs.youtube?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=media-proxy/fs.youtube&amp;utm_campaign=Badge_Grade
+    
+.. image:: https://codecov.io/gh/media-proxy/fs.youtube/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/media-proxy/fs.youtube
+    
+.. image:: https://pyup.io/repos/github/media-proxy/fs.youtube/shield.svg
+    :target: https://pyup.io/repos/github/media-proxy/fs.youtube/
 
 A PyFilesystem2 implementation for accessing YouTube Videos and
 Playlists
