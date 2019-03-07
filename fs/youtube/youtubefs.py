@@ -9,7 +9,7 @@ from six.moves.urllib.request import Request
 from six.moves.urllib.request import build_opener
 from six.moves.urllib.request import install_opener
 from six.moves.urllib.request import urlopen
-from six.moves.urllib.request import URLError
+from six.moves.urllib import URLError
 from six.moves.urllib.response import addinfourl
 
 from .. import errors
