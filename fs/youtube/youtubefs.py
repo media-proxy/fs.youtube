@@ -56,7 +56,10 @@ class SeekableHTTPFile:
             rangeheader = {'Range': 'bytes=%s-%s' % (self.pos, self.pos + size - 1)}
 
         req = Request(self.url, headers=rangeheader)
-        res = urlopen(req)
+        try:
+            res = urlopen(req)
+        except URLError:
+            return ''
 
         self.pos += size
         data = res.read()
